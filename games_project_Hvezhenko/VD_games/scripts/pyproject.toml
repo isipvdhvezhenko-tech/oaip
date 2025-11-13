@@ -1,12 +1,10 @@
 [project]
-name = "games-project-Hvezhenko"  
-version = "0.1.1"
+name = "games_project_Hvezhenko"
+version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "prompt>=0.4.1",
-]
+dependencies = []
 
 [build-system]
 requires = ["hatchling"]
@@ -15,11 +13,5 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["VD_games"]
 
-[dependency-groups]
-dev = [
-    "ruff>=0.14.2",
-]
-
 [project.scripts]
-brain-games = "VD_games.scripts.VD_games:main"
-VD-even = "VD_games.scripts.VD_even:main"
+vd-games = "VD_games.scripts.VD_main:main"
